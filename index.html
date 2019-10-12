@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Rock-paper-scissors</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <div class="container-fluid my-5">
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-6" style="font-size: 250%; text-align: center">Score</div>
+            <div class="col-sm-3"></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div id="score" class="col-sm-6" style="font-size: 250%; text-align: center">0 : 0</div>
+            <div class="col-sm-3"></div>
+        </div>
+
+        <div class="row" style="margin-top: 50px">
+            <div class="col-sm-3"></div>
+            <div id="status" class="col-sm-6" style="font-size: 250%; text-align: center">Make Your Choice</div>
+            <div class="col-sm-3"></div>
+        </div>
+
+        <div class="row" style="margin-top: 15px">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-6" style="text-align: center">
+                <button id="rock"><img src="https://d30y9cdsu7xlg0.cloudfront.net/png/34372-200.png" height="100px"
+                        width="100px" title="Rock" /></button>
+                <button id="paper"><img src="https://d30y9cdsu7xlg0.cloudfront.net/png/1476-200.png" height="100px"
+                        width="100px" title="Paper" /></button>
+                <button id="scissors"><img src="https://d30y9cdsu7xlg0.cloudfront.net/png/9049-200.png" height="100px"
+                        width="100px" title="Scissors" /></button>
+            </div>
+            <div class="col-sm-3"></div>
+        </div>
+
+        <div class="row " id="outside">
+            
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

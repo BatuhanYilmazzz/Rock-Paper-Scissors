@@ -3,6 +3,11 @@ const rock = document.querySelector("#rock");
 const paper = document.querySelector("#paper");
 const scissors = document.querySelector("#scissors");
 const outside = document.getElementById("outside");
+const pcCountt = document.getElementById("pcCount");
+const youCountt = document.getElementById("youCount");
+
+let pcWin = 0;
+let youWin = 0;
 
 rock.addEventListener("click", functionRock);
 paper.addEventListener("click", functionPaper);
@@ -13,12 +18,16 @@ function functionRock(e) {
     const computerGame = myArray[Math.floor(Math.random() * myArray.length)];
 
     if (computerGame == "rock") {
-        console.log("equal");
+
+        addResultUIEqual();
     } else if (computerGame == "paper") {
-        console.log("Computer won");
+
+        pcWin++;
         addResultUILose();
+
     } else {
-        console.log("You won");
+
+        youWin++;
         addResultUIWon();
     }
 
@@ -29,12 +38,15 @@ function functionPaper(e) {
     const computerGame = myArray[Math.floor(Math.random() * myArray.length)];
 
     if (computerGame == "paper") {
-        console.log("equal");
+        addResultUIEqual();
+
     } else if (computerGame == "scissors") {
-        console.log("Computer won");
+
+        pcWin++;
         addResultUILose();
     } else {
-        console.log("You won");
+
+        youWin++;
         addResultUIWon();
     }
 
@@ -45,38 +57,55 @@ function functionScissors(e) {
     const computerGame = myArray[Math.floor(Math.random() * myArray.length)];
 
     if (computerGame == "scissors") {
-        console.log("equal");
+
+        addResultUIEqual();
     } else if (computerGame == "rock") {
-        console.log("Computer won");
+
+        pcWin++;
         addResultUILose();
     } else {
-        console.log("You won");
-        addResultUI();
+
+        youWin++;
+        addResultUIWon();
     }
 
 }
 
 
-function addResultUIWon(){
+function addResultUIWon() {
+    pcCountt.innerHTML = pcWin;
+    youCountt.innerHTML = youWin;
     const span = document.createElement("span");
-    span.className = "col-sm-4 alert alert-success mx-auto mt-5 text-center";
-    span.appendChild(document.createTextNode("You Won"));
+    span.className = "col-sm-4 alert alert-success text-dark font-weight-bold mx-auto mt-5 text-center";
+    span.appendChild(document.createTextNode("YOU WON"));
     outside.appendChild(span);
 
-    setTimeout(function(){
+
+    setTimeout(function () {
         outside.innerHTML = "";
-    },2000);  
+    }, 2000);
 }
 
-function addResultUILose(){
+function addResultUILose() {
+    pcCountt.innerHTML = pcWin;
+    youCountt.innerHTML = youWin;
     const span = document.createElement("span");
-    span.className = "col-sm-4 alert alert-danger mx-auto mt-5 text-center";
-    span.appendChild(document.createTextNode("Computer Won"));
+    span.className = "col-sm-4 alert alert-danger text-dark font-weight-bold mx-auto mt-5 text-center";
+    span.appendChild(document.createTextNode("COMPUTER WON"));
     outside.appendChild(span);
 
-    setTimeout(function(){
+    setTimeout(function () {
         outside.innerHTML = "";
-    },2000);  
+    }, 2000);
 }
 
+function addResultUIEqual() {
+    const span = document.createElement("span");
+    span.className = "col-sm-4 alert alert-dark text-dark font-weight-bold mx-auto mt-5 text-center";
+    span.appendChild(document.createTextNode("EQUAL"));
+    outside.appendChild(span);
 
+    setTimeout(function () {
+        outside.innerHTML = "";
+    }, 2000);
+}

@@ -18,7 +18,10 @@ git clone => The SSH key or URL <=
 
 open index.html file on your browser and start to play or just go here ==> [Rock-Paper-Scissors]https://batuhanyilmazzz.github.io/Rock-Paper-Scissors/
 
-# Authors
+## Author
 
-- **Ahmet Batuhan Yılmaz** -(https://github.com/BatuhanYilmazzz)
+👤 **Ahmet Batuhan Yılmaz**
+
+- Github: [@BatuhanYilmazzz] (https://github.com/BatuhanYilmazzz)
+- Twitter: [@BatuhanYilmaz] (https://twitter.com/batuhan38008916)
 

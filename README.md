@@ -1,7 +1,24 @@
 # Rock-Paper-Scissors
 
-USED STACKS  HTML, CSS, BOOTSTRAP , JAVASCRİPT 
+A simple Rock-Paper-Scissors application just for having fun and builded project for Javascript.
 
-It's a rock-paper-scissors game which designed with bootstrap and programmed with javascript.Also used DOM manipulation.Hope you like it.
+# Used Stacks
 
-https://batu1905.github.io/Rock-Paper-Scissors/
+- Html5
+- CSS3
+- Javascript
+
+## Getting started
+
+To get started with the app, clone the repo
+
+```
+git clone => The SSH key or URL <=
+```
+
+open index.html file on your browser and start to play or just go here ==> [Rock-Paper-Scissors](https://batu1905.github.io/Rock-Paper-Scissors/)
+
+# Authors
+
+- **Ahmet Batuhan Yılmaz** -(https://github.com/BatuhanYilmazzz)
+

@@ -16,7 +16,7 @@ To get started with the app, clone the repo
 git clone => The SSH key or URL <=
 ```
 
-open index.html file on your browser and start to play or just go here ==> [Rock-Paper-Scissors](https://batu1905.github.io/Rock-Paper-Scissors/)
+open index.html file on your browser and start to play or just go here ==> [Rock-Paper-Scissors]https://batuhanyilmazzz.github.io/Rock-Paper-Scissors/
 
 # Authors
 
